@@ -58,6 +58,7 @@ try {
     valor_verificacao =  Number(valor_digitado.value)
 
     if(valor_digitado.value == "") throw 'Informe um valor!'
+    if ((isNaN(valor_digitado))) throw 'Erro + erro JavaScript';
     else if (valor_verificacao <= 5 || valor_verificacao >= 10) throw 'Informe um valor maior que 5 e menor que 10'
 
 }
